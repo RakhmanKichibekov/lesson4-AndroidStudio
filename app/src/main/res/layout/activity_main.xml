@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_bottom"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/textViewPlayList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="120sp"
+            android:text="Плейлист: Кино"
+            style="@style/MaterialAlertDialog.Material3.Body.Text"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@id/action_image"
+        />
+
+    <LinearLayout
+        android:id="@+id/action_image"
+        android:layout_below="@id/textViewPlayList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="350sp"
+            android:layout_marginHorizontal="50dp"
+            app:srcCompat="@drawable/kino"
+            />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_below="@id/action_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewMirea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Перемен"
+            android:textSize="22dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Виктор Цой"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_image"
+        android:orientation="horizontal"
+        android:layout_marginTop="100sp"
+        android:layout_marginHorizontal="80sp">
+
+        <ImageButton
+            android:id="@+id/buttonMirea"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@android:drawable/ic_media_previous"
+            tools:src="@android:drawable/ic_media_previous" />
+
+        <ImageButton
+            android:id="@+id/buttonMirea2"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@android:drawable/ic_media_pause" />
+
+        <ImageButton
+            android:id="@+id/buttonMirea3"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/buttonMirea4"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@android:drawable/ic_media_next" />
+    </LinearLayout>
+
+</RelativeLayout>

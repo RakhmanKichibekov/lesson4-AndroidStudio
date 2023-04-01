@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_bottom"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/upper_bg"
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:background="@color/bg2">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_box"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:layout_below="@id/upper_bg"
+        android:background="@color/white"
+        android:backgroundTint="@color/bg2"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="-90sp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результат"
+            android:layout_marginHorizontal="20sp"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Среднее количество пар в день: "
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="180sp"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/editTextCountLessons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="230sp"
+            android:ems="10"
+            android:hint="Общее количество пар"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextCoundDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="270sp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Количество учебных дней"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/buttonMirea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="320sp"
+            android:onClick="enter"
+            android:backgroundTint="@color/purple_700"
+            android:text="Посчитать" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
