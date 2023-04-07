@@ -15,7 +15,10 @@ public class UploadWorker extends Worker {
             @NonNull Context context,
             @NonNull WorkerParameters params) {
         super(context, params);
+        Log.d(TAG, "UploadWorker");
+
     }
+    @NonNull
     @Override
     public Result doWork() {
         Log.d(TAG, "doWork: start");

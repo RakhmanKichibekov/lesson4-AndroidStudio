@@ -15,4 +15,16 @@
     <color name="register_stroke">#D16E53</color>
     <color name="bg">#4169E1</color>
     <color name="bg2">#0000CD</color>
+    <color name="primary_color_100">#FFB0FF</color>
+    <color name="primary_color_200">#FF80FF</color>
+    <color name="primary_color_300">#FF40FF</color>
+    <color name="primary_color_400">#FF00FF</color>
+    <color name="primary_color_500">#C800FF</color>
+    <color name="primary_color_600">#A400FF</color>
+    <color name="primary_color_700">#8100FF</color>
+    <color name="primary_color_800">#5E00FF</color>
+    <color name="primary_color_900">#2E00FF</color>
+    <color name="primary_color">#C800FF</color>
+    <color name="primary_dark_color">#8100FF</color>
+    <color name="secondary_color">#FFFFFF</color>
 </resources>

@@ -23,8 +23,8 @@
             android:textSize="20sp" />
     </LinearLayout>
 
-    <ProgressBar
-        android:id="@+id/progressBar"
+    <SeekBar
+        android:id="@+id/seekBar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -30,9 +30,9 @@ public class MyLoader extends AsyncTaskLoader<String> {
             byte[] key = args.getByteArray("key");
 // Восстановление ключа
             SecretKey originalKey = new SecretKeySpec(key, 0, key.length, "AES");
-            String text = decryptMsg(cryptText, originalKey);
-            //
-            firstName = args.getString(ARG_WORD);
+            firstName = decryptMsg(cryptText, originalKey);
+
+//            firstName = args.getString(ARG_WORD);
         }
 
 
